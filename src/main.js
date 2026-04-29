@@ -1,7 +1,7 @@
 `use strict`
 
 // läs in och lägg api i en variabel
-const cvApi = "http://localhost:3000/workexperiences";
+const cvApi = "https://bbw-labb-3-api.onrender.com/workexperiences";
 
 // fixa datumformat 
 function convertDate(date) {
