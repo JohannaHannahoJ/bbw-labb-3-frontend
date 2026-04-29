@@ -1,9 +1,9 @@
-# lab-2-Frontend i kursen Backend-baserad webbutveckling, DT207G
+# lab-3-Frontend i kursen Backend-baserad webbutveckling, DT207G
 
 **Genomförd av joha2102**
 
-Detta projekt är en del av Laboration 2 i kursen Backend-baserad webbutveckling.  
-Syftet med frontend-delen är att skapa ett användargränssnitt som kommunicerar med ett REST-API för att hantera arbetserfarenheter i ett CV. Del 1 av uppgiften, REST-API:t finns här: https://github.com/JohannaHannahoJ/bbw-labb-2-api
+Detta projekt är en del av Laboration 3 i kursen Backend-baserad webbutveckling.  
+Syftet med frontend-delen är att skapa ett användargränssnitt som kommunicerar med ett REST-API för att hantera arbetserfarenheter i ett CV. Del 1 av uppgiften, REST-API:t finns här: https://github.com/JohannaHannahoJ/bbw-labb-3-api
 
 Frontend-applikationen är byggd med HTML, CSS och JavaScript och hämtar samt skickar data till ett backend-API via fetch-anrop.
 
@@ -30,5 +30,5 @@ Applikationen innehåller frontend-validering för att säkerställa korrekt inm
 ## Kommunikation med API
 
 Frontend kommunicerar med backend via följande endpoint:
-http://localhost:3500/api/workexperience
+http://localhost:3000/workexperiences
 
