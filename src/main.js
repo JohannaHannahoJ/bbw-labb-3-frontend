@@ -1,7 +1,7 @@
 `use strict`
 
 // läs in och lägg api i en variabel
-const cvApi = "http://localhost:3500/api/workexperience";
+const cvApi = "http://localhost:3000/workexperiences";
 
 // fixa datumformat 
 function convertDate(date) {
@@ -62,7 +62,7 @@ function renderCv(list) {
             <p class="date">${startDate} - ${endDate}</p>
             <p>${item.description}</p>
 
-            <button class="delete-btn" data-id="${item.id}">
+            <button class="delete-btn" data-id="${item._id}">
                 Ta bort
             </button>
             `;
@@ -71,7 +71,7 @@ function renderCv(list) {
         const btn = div.querySelector(".delete-btn");
         // radera vid klick
         btn.addEventListener("click", async () => {
-            const res = await fetch(`${cvApi}/${item.id}`, {
+            const res = await fetch(`${cvApi}/${item._id}`, {
                 method: "DELETE"
             });
 
