@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="src/style.css">
+    <title>Mitt CV - Lägg till</title>
+</head>
+
+<body>
+
+    <header id="main-header">
+        <h1>Mitt CV</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="add.html" class="current" aria-current="page">Lägg till</a></li>
+                <li><a href="about.html">Om sidan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="add-page">
+        <h2>Lägg till arbete</h2>
+        <p id="message"></p>
+        <form id="cvForm" novalidate>
+            <small class="hint">Obligatoriskt:</small>
+            <input type="text" id="company_name" placeholder="Företag" required>
+            <small class="hint">Obligatoriskt:</small>
+            <input type="text" id="job_title" placeholder="Jobbtitel" required>
+            <small class="hint">Obligatoriskt:</small>
+            <input type="date" id="start_date" required>
+            <small class="hint">Fyll i om avslutad:</small>
+            <input type="date" id="end_date">
+            <small class="hint">Obligatoriskt:</small>
+            <textarea id="description" placeholder="Beskrivning" required></textarea>
+
+            <button type="submit">Lägg till</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© joha2102@student.miun.se</p>
+    </footer>
+
+    <script src="src/main.js"></script>
+</body>
+
+</html>
